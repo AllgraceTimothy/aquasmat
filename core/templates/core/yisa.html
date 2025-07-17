@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}YISA | Aquarech{% endblock %}
+
+{% block content %}
+<!-- YISA Hero Section -->
+<section class="yisa-hero" style="background: linear-gradient(rgba(15, 123, 86, 0.8), rgba(15, 123, 86, 0.8)), url('{% static 'core/images/0M7A7498_edited_edited.jpg' %}'); background-size: cover; background-position: center; padding: 120px 20px; text-align: center; color: white;">
+    <div class="container">
+        <h1 style="font-size: 48px; font-weight: 700; margin-bottom: 20px;">Youth in Sustainable Aquaculture</h1>
+        <p style="font-size: 20px; max-width: 800px; margin: 0 auto 30px;">
+            Empowering young people, especially women, through innovative aquaculture opportunities
+        </p>
+        <a href="#apply" class="app-button" style="background-color: white; color: #0F7B56; padding: 12px 30px; font-size: 16px;">Apply Now</a>
+    </div>
+</section>
+
+<!-- Program Overview -->
+<section style="padding: 80px 20px;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px; align-items: center;">
+            <div>
+                <h2 style="font-size: 36px; color: #0F7B56; margin-bottom: 20px;">About YISA</h2>
+                <p style="font-size: 18px; color: #666; margin-bottom: 20px;">
+                    The Youth in Sustainable Aquaculture (YISA) Program, a partnership with the Mastercard Foundation aims to enhance resilient livelihoods through innovative aquaculture practices.
+                </p>
+                <p style="font-size: 18px; color: #666;">
+                    The project aims to change perceptions of the potential offered by the aquaculture sector for entrepreneurship and employment, building knowledge and capacity so that young people, especially women, are attracted by the opportunities and growth potential offered by working in aquaculture. It will also address socio-cultural norms and attitudes to increase the inclusion of women in a sector that is currently male-dominated.
+                </p>
+            </div>
+            <div>
+                <img src="{% static 'core/images/0M7A7660_edited.jpg' %}" alt="YISA Participants" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Program Details -->
+<section style="padding: 80px 20px; background-color: #F7FAF9;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-size: 36px; color: #0F7B56; margin-bottom: 20px;">Program Details</h2>
+            <p style="font-size: 18px; color: #666; max-width: 700px; margin: 0 auto;">
+                YISA is designed to create sustainable opportunities for young people in aquaculture
+            </p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+            <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="width: 60px; height: 60px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fas fa-map-marker-alt" style="color: #0F7B56; font-size: 24px;"></i>
+                </div>
+                <h3 style="font-size: 22px; color: #222; margin-bottom: 15px;">Location</h3>
+                <p style="color: #666;">
+                    Kisumu, Homa Bay, Siaya, Kakamega, Busia, and Kilifi
+                </p>
+            </div>
+            
+            <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="width: 60px; height: 60px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fas fa-users" style="color: #0F7B56; font-size: 24px;"></i>
+                </div>
+                <h3 style="font-size: 22px; color: #222; margin-bottom: 15px;">Eligibility</h3>
+                <p style="color: #666;">
+                    Ages 23-32 years from the six counties to join the YISA program
+                </p>
+            </div>
+            
+            <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="width: 60px; height: 60px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fas fa-bullseye" style="color: #0F7B56; font-size: 24px;"></i>
+                </div>
+                <h3 style="font-size: 22px; color: #222; margin-bottom: 15px;">Goal</h3>
+                <p style="color: #666;">
+                    Create 150,000 jobs in aquaculture for young people
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section style="padding: 80px 20px;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <h2 style="font-size: 36px; color: #0F7B56; text-align: center; margin-bottom: 40px;">Our Partners</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: center;">
+            <img src="{% static 'core/images/logo.png' %}" alt="Aquarech Logo" style="height: 60px;">
+            <img src="{% static 'core/images/Logo-600x200.png' %}" alt="Mastercard Foundation Logo" style="height: 60px;">
+            <img src="{% static 'core/images/livingwood_ltd_logo.png' %}" alt="Livingwood Ltd Logo" style="height: 60px;">
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section id="apply" style="padding: 80px 20px; background-color: #0F7B56; color: white; text-align: center;">
+    <div class="container" style="max-width: 800px; margin: auto;">
+        <h2 style="font-size: 32px; margin-bottom: 20px;">Ready To Grow Your Aquaculture Business Today?</h2>
+        <p style="font-size: 18px; margin-bottom: 30px; opacity: 0.9;">
+            You Can Get Started Right Away By Downloading The Aquarech App.
+        </p>
+        
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="#" class="app-button" style="background-color: white; color: #0F7B56; padding: 12px 30px; font-size: 16px; display: inline-flex; align-items: center;">
+                <i class="fas fa-download" style="margin-right: 10px;"></i> AQUARECH FARMER APP
+            </a>
+            <a href="#" class="app-button" style="background-color: transparent; border: 2px solid white; padding: 12px 30px; font-size: 16px; display: inline-flex; align-items: center;">
+                <i class="fas fa-shopping-basket" style="margin-right: 10px;"></i> AQUARECH FISH DELI
+            </a>
+        </div>
+        
+        <div style="margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.2);">
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Call Us</h3>
+            <a href="tel:+254XXXXXXXXX" style="font-size: 20px; color: white; text-decoration: none; font-weight: 600;">+254 XXX XXX XXX</a>
+        </div>
+    </div>
+</section>
+
+<!-- Success Stories -->
+<section style="padding: 80px 20px; background-color: #E8F5F0;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <h2 style="font-size: 36px; color: #0F7B56; text-align: center; margin-bottom: 40px;">YISA Success Stories</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="height: 200px; overflow: hidden;">
+                    <img src="{% static 'core/images/0M7A7660_edited.jpg' %}" alt="YISA Participant" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 25px;">
+                    <h3 style="font-size: 20px; color: #0F7B56; margin-bottom: 10px;">From Student to Aquapreneur</h3>
+                    <p style="color: #666; margin-bottom: 15px;">
+                        How one YISA participant transformed her life through sustainable aquaculture practices.
+                    </p>
+                    <a href="#" style="color: #0F7B56; font-weight: 600; text-decoration: none;">Read Story →</a>
+                </div>
+            </div>
+            
+            <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="height: 200px; overflow: hidden;">
+                    <img src="{% static 'core/images/0M7A7498_edited_edited.jpg' %}" alt="YISA Farm" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 25px;">
+                    <h3 style="font-size: 20px; color: #0F7B56; margin-bottom: 10px;">Women Leading Aquaculture</h3>
+                    <p style="color: #666; margin-bottom: 15px;">
+                        Breaking barriers: How YISA is helping women take leadership roles in aquaculture.
+                    </p>
+                    <a href="#" style="color: #0F7B56; font-weight: 600; text-decoration: none;">Read Story →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

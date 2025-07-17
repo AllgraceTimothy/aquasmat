@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="market-page">
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <h1 class="text-center hero-title mb-4">Access the largest market of fish traders</h1>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="hero-text lead">Aquarech takes pride in offering locally produced fish that will not only satisfy your hunger and calm your mind but is also protein-rich. We offer fresh, locally produced tilapia at a reasonable price, readily available in our Fish Farmilia.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/static/images/fish-market.jpg" alt="Fish Market" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ordering Section -->
+    <section class="ordering-section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">How to Order</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="order-method p-4 h-100">
+                        <div class="icon-container mb-3">
+                            <img src="/static/images/ussd-icon.png" alt="USSD" class="method-icon">
+                        </div>
+                        <h3>USSD Code</h3>
+                        <p class="method-code">Dial *789*4#</p>
+                        <p>to make an order</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="order-method p-4 h-100">
+                        <div class="icon-container mb-3">
+                            <img src="/static/images/phone-icon.png" alt="Phone" class="method-icon">
+                        </div>
+                        <h3>Phone Call</h3>
+                        <p class="method-code">Call 0110884669</p>
+                        <p>to place your order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Aquarech Fish?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 h-100">
+                        <img src="/static/images/fresh-icon.png" alt="Fresh" class="benefit-icon mb-3">
+                        <h3>Fresh & Local</h3>
+                        <p>Direct from Lake Victoria to your table</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 h-100">
+                        <img src="/static/images/price-icon.png" alt="Affordable" class="benefit-icon mb-3">
+                        <h3>Affordable Prices</h3>
+                        <p>High quality fish at reasonable prices</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="benefit-card p-4 h-100">
+                        <img src="/static/images/protein-icon.png" alt="Nutritious" class="benefit-icon mb-3">
+                        <h3>Protein Rich</h3>
+                        <p>Healthy and nutritious meals for your family</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .hero-section {
+        background-color: #e6f2ff;
+    }
+    
+    .hero-title {
+        color: #0066cc;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    
+    .hero-text {
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .ordering-section {
+        background-color: #f8f9fa;
+    }
+    
+    .section-title {
+        color: #0066cc;
+        font-weight: 700;
+    }
+    
+    .order-method {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .order-method:hover {
+        transform: translateY(-5px);
+    }
+    
+    .method-icon {
+        height: 60px;
+    }
+    
+    .method-code {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #0066cc;
+        margin: 15px 0;
+    }
+    
+    .benefit-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    
+    .benefit-icon {
+        height: 50px;
+    }
+    
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2rem;
+        }
+        
+        .method-code {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+{% endblock %}

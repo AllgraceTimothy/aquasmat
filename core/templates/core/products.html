@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}PRODUCTS | Aquarech{% endblock %}
+
+{% block content %}
+<!-- Products Hero Section -->
+<section class="products-hero" style="background: linear-gradient(rgba(15, 123, 86, 0.9), rgba(15, 123, 86, 0.9)), url('{% static 'core/images/0M7A0045.jpeg' %}'); background-size: cover; background-position: center; padding: 120px 20px; text-align: center; color: white;">
+    <div class="container">
+        <h1 style="font-size: 48px; font-weight: 700; margin-bottom: 20px;">Our Products</h1>
+        <p style="font-size: 20px; max-width: 800px; margin: 0 auto 30px;">
+            Comprehensive solutions for fish farmers, traders, and consumers
+        </p>
+    </div>
+</section>
+
+<!-- Products Introduction -->
+<section style="padding: 80px 20px; background-color: #ffffff;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="font-size: 36px; color: #0F7B56; margin-bottom: 20px;">Quality Products for All Your Aquaculture Needs</h2>
+            <p style="font-size: 18px; color: #666; max-width: 800px; margin: 0 auto;">
+                At Aquarech, we provide a comprehensive range of products and services tailored to meet the needs of both consumers and fish farmers.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Product Cards -->
+<section style="padding: 0 20px 80px; background-color: #ffffff;">
+    <div class="container" style="max-width: 1200px; margin: auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
+            <!-- Fish Deli Card -->
+            <div style="background: #F7FAF9; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+                <div style="height: 250px; overflow: hidden;">
+                    <img src="{% static 'core/images/0M7A0045.jpeg' %}" alt="Fish Deli" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="font-size: 24px; color: #0F7B56; margin-bottom: 15px;">FISH DELI</h3>
+                    <p style="color: #666; margin-bottom: 20px;">
+                        Download Fish Deli app to order air-fried tilapia. We are located in Nairobi, Kisumu, Nakuru & Kakamega.
+                    </p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" class="app-button" style="padding: 10px 20px; font-size: 14px; display: inline-flex; align-items: center;">
+                            <i class="fas fa-download" style="margin-right: 8px;"></i> Download App
+                        </a>
+                        <a href="#" style="color: #0F7B56; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center;">
+                            Learn More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quality Fish Feeds Card -->
+            <div style="background: #F7FAF9; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+                <div style="height: 250px; overflow: hidden;">
+                    <img src="{% static 'core/images/Bopinc-64.jpg' %}" alt="Quality Fish Feeds" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="font-size: 24px; color: #0F7B56; margin-bottom: 15px;">QUALITY FISH FEEDS</h3>
+                    <p style="color: #666; margin-bottom: 20px;">
+                        Download Aquarech app to order top quality fish feeds. Located in Kirinyaga & different parts of western region.
+                    </p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" class="app-button" style="padding: 10px 20px; font-size: 14px; display: inline-flex; align-items: center;">
+                            <i class="fas fa-download" style="margin-right: 8px;"></i> Download App
+                        </a>
+                        <a href="#" style="color: #0F7B56; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center;">
+                            Learn More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fish Familia Card -->
+            <div style="background: #F7FAF9; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+                <div style="height: 250px; overflow: hidden;">
+                    <img src="{% static 'core/images/WhatsApp_Image_2024-09-03_at_11.07.07_AM_(1).jpeg' %}" alt="Fish Familia" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="font-size: 24px; color: #0F7B56; margin-bottom: 15px;">FISH FAMILIA</h3>
+                    <p style="color: #666; margin-bottom: 20px;">
+                        Freshly caught fish, straight from the lake to your table. Perfect for fish traders and consumers.
+                    </p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" class="app-button" style="padding: 10px 20px; font-size: 14px; display: inline-flex; align-items: center;">
+                            <i class="fas fa-download" style="margin-right: 8px;"></i> Download App
+                        </a>
+                        <a href="#" style="color: #0F7B56; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center;">
+                            Learn More <i class="fas fa-arrow-right" style="margin-left: 5px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Services -->
+<section style="padding: 80px 20px; background-color: #E8F5F0;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <h2 style="font-size: 36px; color: #0F7B56; text-align: center; margin-bottom: 50px;">Our Services</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <!-- Fish Familiar Service -->
+            <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="width: 60px; height: 60px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fas fa-exchange-alt" style="color: #0F7B56; font-size: 24px;"></i>
+                </div>
+                <h3 style="font-size: 22px; color: #222; margin-bottom: 15px;">Fish Familiar</h3>
+                <p style="color: #666; margin-bottom: 20px;">
+                    Ensures a steady supply of fresh fish directly from fish farmers' outlets, streamlining the procurement process.
+                </p>
+                <a href="#" style="color: #0F7B56; font-weight: 600; text-decoration: none;">Learn about Fish Familiar →</a>
+            </div>
+            
+            <!-- Last Mile Delivery Service -->
+            <div style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="width: 60px; height: 60px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                    <i class="fas fa-truck" style="color: #0F7B56; font-size: 24px;"></i>
+                </div>
+                <h3 style="font-size: 22px; color: #222; margin-bottom: 15px;">Last Mile Delivery</h3>
+                <p style="color: #666; margin-bottom: 20px;">
+                    Supports fish farmers by delivering high-quality fish feeds efficiently through USSD codes or our mobile app.
+                </p>
+                <a href="#" style="color: #0F7B56; font-weight: 600; text-decoration: none;">Learn about Delivery →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section style="padding: 80px 20px; background-color: #ffffff;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <h2 style="font-size: 36px; color: #0F7B56; text-align: center; margin-bottom: 50px;">How To Order</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
+            <div>
+                <div style="width: 80px; height: 80px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <span style="font-size: 32px; font-weight: 700; color: #0F7B56;">1</span>
+                </div>
+                <h3 style="font-size: 20px; color: #222; margin-bottom: 10px;">Download Our App</h3>
+                <p style="color: #666; font-size: 16px;">
+                    Available on Google Play Store for Android devices
+                </p>
+            </div>
+            
+            <div>
+                <div style="width: 80px; height: 80px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <span style="font-size: 32px; font-weight: 700; color: #0F7B56;">2</span>
+                </div>
+                <h3 style="font-size: 20px; color: #222; margin-bottom: 10px;">Browse Products</h3>
+                <p style="color: #666; font-size: 16px;">
+                    Select from our range of quality products
+                </p>
+            </div>
+            
+            <div>
+                <div style="width: 80px; height: 80px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <span style="font-size: 32px; font-weight: 700; color: #0F7B56;">3</span>
+                </div>
+                <h3 style="font-size: 20px; color: #222; margin-bottom: 10px;">Place Your Order</h3>
+                <p style="color: #666; font-size: 16px;">
+                    Easy checkout process with multiple payment options
+                </p>
+            </div>
+            
+            <div>
+                <div style="width: 80px; height: 80px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <span style="font-size: 32px; font-weight: 700; color: #0F7B56;">4</span>
+                </div>
+                <h3 style="font-size: 20px; color: #222; margin-bottom: 10px;">Receive Delivery</h3>
+                <p style="color: #666; font-size: 16px;">
+                    Fast and reliable delivery to your location
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section style="padding: 80px 20px; background-color: #0F7B56; color: white; text-align: center;">
+    <div class="container" style="max-width: 800px; margin: auto;">
+        <h2 style="font-size: 32px; margin-bottom: 20px;">Ready To Experience Our Products?</h2>
+        <p style="font-size: 18px; margin-bottom: 30px; opacity: 0.9;">
+            Download our app today and get access to quality aquaculture products
+        </p>
+        <a href="#" class="app-button" style="background-color: white; color: #0F7B56; padding: 12px 30px; font-size: 16px; display: inline-flex; align-items: center;">
+            <i class="fas fa-download" style="margin-right: 10px;"></i> DOWNLOAD APP NOW
+        </a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}FARMERS | Aquarech{% endblock %}
+
+{% block content %}
+<!-- Farmers Hero Section -->
+<section class="farmers-hero" style="background: linear-gradient(rgba(15, 123, 86, 0.9), rgba(15, 123, 86, 0.9)), url('{% static 'core/images/486540497_1571086183832463_2791971413549.png' %}'); background-size: cover; background-position: center; padding: 120px 20px; text-align: center; color: white;">
+    <div class="container">
+        <h1 style="font-size: 48px; font-weight: 700; margin-bottom: 20px;">FARMERS</h1>
+        <p style="font-size: 24px; max-width: 800px; margin: 0 auto 30px;">
+            Building a community of fish farmers
+        </p>
+        <a href="#join" class="app-button" style="background-color: white; color: #0F7B56; padding: 12px 30px; font-size: 16px;">Join Our Community</a>
+    </div>
+</section>
+
+<!-- Farmers Introduction -->
+<section style="padding: 80px 20px; background-color: #ffffff;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-size: 36px; color: #0F7B56; margin-bottom: 20px;">Join the Aquarech Fish Farmers Community</h2>
+            <p style="font-size: 18px; color: #666; max-width: 800px; margin: 0 auto;">
+                Join the Aquarech team of fish farmers who are utilizing the latest climate-smart techniques, accessing top-quality feed, and market all while enjoying flexible payment solutions for your fish feeds.
+            </p>
+        </div>
+        
+        <div style="display: flex; justify-content: center;">
+            <img src="{% static 'core/images/Path_Copy.png' %}" alt="Farmer Community" style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        </div>
+    </div>
+</section>
+
+<!-- Impact Metrics -->
+<section style="padding: 80px 20px; background-color: #E8F5F0;">
+    <div class="container" style="max-width: 1000px; margin: auto; text-align: center;">
+        <div style="margin-bottom: 60px;">
+            <img src="{% static 'core/images/Water_wave_White.png' %}" alt="Wave Icon" style="height: 40px; margin-bottom: 20px;">
+            <h2 style="font-size: 32px; color: #0F7B56; margin-bottom: 20px;">Data Collected From Aquarech's Onboarded Fish Farmers</h2>
+            <p style="font-size: 20px; color: #666; font-weight: 500;">Proves Our Effectiveness Thus Far</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+            <div>
+                <div style="font-size: 48px; font-weight: 700; color: #0F7B56; margin-bottom: 10px;">30%</div>
+                <div style="font-size: 20px; color: #666;">Increased Fish Farmer Productivity</div>
+            </div>
+            <div>
+                <div style="font-size: 48px; font-weight: 700; color: #0F7B56; margin-bottom: 10px;">50%</div>
+                <div style="font-size: 20px; color: #666;">Increased Fish Farmer Income</div>
+            </div>
+            <div>
+                <div style="font-size: 48px; font-weight: 700; color: #0F7B56; margin-bottom: 10px;">35%</div>
+                <div style="font-size: 20px; color: #666;">Reduced Fish Production Cycles</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section id="join" style="padding: 80px 20px; background-color: #ffffff;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <h2 style="font-size: 36px; color: #0F7B56; text-align: center; margin-bottom: 60px;">HOW IT WORKS</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+            <div style="text-align: center;">
+                <div style="width: 100px; height: 100px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                    <i class="fas fa-user-plus" style="color: #0F7B56; font-size: 40px;"></i>
+                </div>
+                <h3 style="font-size: 22px; color: #222; margin-bottom: 15px;">1. Register with Aquarech</h3>
+                <p style="color: #666;">
+                    Register today to gain access to our climate-smart, data-driven precision fish farming system.
+                </p>
+            </div>
+            
+            <div style="text-align: center;">
+                <div style="width: 100px; height: 100px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                    <i class="fas fa-mobile-alt" style="color: #0F7B56; font-size: 40px;"></i>
+                </div>
+                <h3 style="font-size: 22px; color: #222; margin-bottom: 15px;">2. Download The App</h3>
+                <p style="color: #666;">
+                    Gain access to our fish buy-back system through our platform to connect with Aquarech's extensive fish market.
+                </p>
+            </div>
+            
+            <div style="text-align: center;">
+                <div style="width: 100px; height: 100px; background-color: #E8F5F0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                    <i class="fas fa-fish" style="color: #0F7B56; font-size: 40px;"></i>
+                </div>
+                <h3 style="font-size: 22px; color: #222; margin-bottom: 15px;">3. Access Quality Feeds</h3>
+                <p style="color: #666;">
+                    Register to gain simple access to dependable, high-quality fish feeds.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial -->
+<section style="padding: 80px 20px; background-color: #F7FAF9;">
+    <div class="container" style="max-width: 800px; margin: auto;">
+        <h2 style="font-size: 36px; color: #0F7B56; text-align: center; margin-bottom: 60px;">What our customers love about us</h2>
+        
+        <div style="background: white; border-radius: 12px; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); position: relative;">
+            <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto -60px auto; border: 4px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <img src="{% static 'core/images/black_youth_FISH_farmer.png' %}" alt="Alfred Sidindi" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 18px; color: #666; margin-bottom: 20px; font-style: italic;">
+                    "Aquarech has proven to be a one-of-a-kind platform that provides the greatest fish feed that you and your fish will undoubtedly enjoy. Aquarech is my preferred platform for all of my fish feeds, and consultants can't wait for you to give it a try."
+                </p>
+                <p style="font-weight: 700; color: #222; margin-bottom: 5px;">Alfred Sidindi</p>
+                <p style="color: #666;">Fish Farmer in Kakamega</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section style="padding: 80px 20px; background-color: #0F7B56; color: white; text-align: center;">
+    <div class="container" style="max-width: 800px; margin: auto;">
+        <h2 style="font-size: 32px; margin-bottom: 20px;">Why not join the hundreds of fish farmers who have used Aquarech to more than double their income?</h2>
+        <a href="#" class="app-button" style="background-color: white; color: #0F7B56; padding: 15px 40px; font-size: 18px; display: inline-flex; align-items: center; margin-top: 30px;">
+            <i class="fas fa-download" style="margin-right: 10px;"></i> DOWNLOAD THE AQUARECH FARMER APP
+        </a>
+    </div>
+</section>
+{% endblock %}

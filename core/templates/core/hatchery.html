@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hatchery-page">
+    <!-- Hero Section -->
+    <section class="hero-section py-5 text-center">
+        <div class="container">
+            <h1 class="hero-title">AQUARECH HATCHERY & TECHNICAL TRANSFER CENTER</h1>
+            <h2 class="hero-subtitle">TRAINING HUB</h2>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+    <section class="description-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="lead">Located at LBDA Kibos, our Training Hub is a hands on learning space where farmers, students, and aquaculture enthusiasts come together to grow their skills and confidence.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/static/images/hatchery-building.jpg" alt="Aquarech Hatchery Building" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Operations Section -->
+    <section class="operations-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">A normal day at the Hatchery</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="text-center">
+                        <img src="/static/images/hatchery-daily.jpg" alt="Hatchery Daily Operations" class="img-fluid rounded mb-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h3 class="mb-4">Get access to hands on experience at our transfer centre with:</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <img src="/static/images/expert-icon.png" alt="Experts" class="feature-icon">
+                            <p>Hatchery experts</p>
+                        </div>
+                        <div class="feature-item">
+                            <img src="/static/images/training-icon.png" alt="Training" class="feature-icon">
+                            <p>Training hub</p>
+                        </div>
+                        <div class="feature-item">
+                            <img src="/static/images/pond-icon.png" alt="Ponds" class="feature-icon">
+                            <p>Fish ponds</p>
+                        </div>
+                        <div class="feature-item">
+                            <img src="/static/images/hatchery-icon.png" alt="Hatchery" class="feature-icon">
+                            <p>A hatchery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .hero-section {
+        background-color: #e6f2ff;
+        padding: 4rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #0066cc;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 2rem;
+        color: #333;
+        font-weight: 600;
+    }
+    
+    .description-section {
+        background-color: #ffffff;
+    }
+    
+    .description-section .lead {
+        font-size: 1.25rem;
+        line-height: 1.6;
+    }
+    
+    .operations-section {
+        background-color: #f8f9fa;
+    }
+    
+    .features-section {
+        background-color: #ffffff;
+    }
+    
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .feature-item {
+        text-align: center;
+    }
+    
+    .feature-icon {
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+        }
+        
+        .description-section .col-md-6:last-child {
+            margin-top: 2rem;
+        }
+        
+        .features-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+</style>
+{% endblock %}

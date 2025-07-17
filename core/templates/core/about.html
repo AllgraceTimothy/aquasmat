@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ABOUT | Aquarech{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="about-hero" style="background: linear-gradient(rgba(15, 123, 86, 0.9), rgba(15, 123, 86, 0.9)), url('{% static 'core/images/aqua-moments.jpg' %}'); background-size: cover; background-position: center; padding: 120px 20px; text-align: center; color: white;">
+    <div class="container">
+        <h1 style="font-size: 48px; font-weight: 700; margin-bottom: 20px;">Explore Aquarech</h1>
+        <p style="font-size: 24px; max-width: 800px; margin: 0 auto;">
+            Powering Growth in Aquaculture
+        </p>
+    </div>
+</section>
+
+<!-- Introduction Section -->
+<section style="padding: 80px 20px; background-color: #ffffff;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <p style="font-size: 20px; color: #666; max-width: 800px; margin: 0 auto;">
+                Aquarech is Kenya's first fish farming platform that enables fish farmers, fish feed manufacturers, and fish traders to trade and build trusting long-lasting partnerships.
+            </p>
+        </div>
+        
+        <div style="display: flex; justify-content: center;">
+            <img src="{% static 'core/images/Path.png' %}" alt="Aquarech Ecosystem" style="max-width: 100%; border-radius: 12px;">
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission -->
+<section style="padding: 80px 20px; background-color: #F7FAF9;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px;">
+            <!-- Who We Are -->
+            <div>
+                <h2 style="font-size: 30px; color: #0F7B56; margin-bottom: 20px; position: relative; padding-bottom: 15px;">
+                    Who We Are
+                    <span style="position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background-color: #0F7B56;"></span>
+                </h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    If you haven't heard of us yet, we guarantee you won't be able to forget us once you do.
+                </p>
+                <p style="color: #666;">
+                    Our team is comprised of only the best employees in the industry, all of whom work tirelessly to achieve the objectives they have set for themselves.
+                </p>
+            </div>
+            
+            <!-- Our Vision -->
+            <div>
+                <h2 style="font-size: 30px; color: #0F7B56; margin-bottom: 20px; position: relative; padding-bottom: 15px;">
+                    Our Vision
+                    <span style="position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background-color: #0F7B56;"></span>
+                </h2>
+                <p style="color: #666;">
+                    To transform African aquaculture into a sustainable, tech-driven industry where smallholder farmers thrive as commercial entrepreneurs, eradicating poverty and hunger through inclusive finance and climate-smart solutions.
+                </p>
+            </div>
+            
+            <!-- Our Mission -->
+            <div>
+                <h2 style="font-size: 30px; color: #0F7B56; margin-bottom: 20px; position: relative; padding-bottom: 15px;">
+                    Our Mission
+                    <span style="position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background-color: #0F7B56;"></span>
+                </h2>
+                <p style="color: #666;">
+                    We empower smallholder fish farmers with collateral-free loans, high-quality inputs, and guaranteed markets through our integrated AquaFedha platform. By combining blended finance, mobile technology, and aquaculture expertise, we bridge the gap between subsistence farming and profitable commercial production.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section style="padding: 80px 20px; background-color: #ffffff;">
+    <div class="container" style="max-width: 1200px; margin: auto;">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="font-size: 36px; color: #0F7B56; margin-bottom: 20px;">Our Leadership</h2>
+            <p style="font-size: 18px; color: #666; max-width: 800px; margin: 0 auto;">
+                Our leadership team is the crucial component that oversees the success of Kenya's first aquaculture platform. The team has a wealth of knowledge and is well-equipped to lead, which justifies our early success.
+            </p>
+        </div>
+        
+        <!-- Team Carousel -->
+        <div style="position: relative;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Team Member 1 -->
+                <div style="background: #F7FAF9; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="height: 300px; overflow: hidden;">
+                        <img src="{% static 'core/images/leadership-1.jpg' %}" alt="Leadership Team" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 25px; text-align: center;">
+                        <h3 style="font-size: 22px; color: #222; margin-bottom: 5px;">David Nothmann</h3>
+                        <p style="color: #0F7B56; font-weight: 600; margin-bottom: 15px;">Co-Founder & CEO</p>
+                        <p style="color: #666; font-size: 15px;">
+                            Visionary leader driving Aquarech's mission to transform aquaculture in Africa.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div style="background: #F7FAF9; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="height: 300px; overflow: hidden;">
+                        <img src="{% static 'core/images/leadership-2.jpg' %}" alt="Leadership Team" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 25px; text-align: center;">
+                        <h3 style="font-size: 22px; color: #222; margin-bottom: 5px;">Joseph Rehmann</h3>
+                        <p style="color: #0F7B56; font-weight: 600; margin-bottom: 15px;">Co-Founder & COO</p>
+                        <p style="color: #666; font-size: 15px;">
+                            Operations expert ensuring seamless delivery of our services to farmers.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div style="background: #F7FAF9; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="height: 300px; overflow: hidden;">
+                        <img src="{% static 'core/images/leadership-3.jpg' %}" alt="Leadership Team" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div style="padding: 25px; text-align: center;">
+                        <h3 style="font-size: 22px; color: #222; margin-bottom: 5px;">Mercy Mwende</h3>
+                        <p style="color: #0F7B56; font-weight: 600; margin-bottom: 15px;">Head of Farmer Engagement</p>
+                        <p style="color: #666; font-size: 15px;">
+                            Connecting with farmers to understand and address their needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Culture -->
+<section style="padding: 80px 20px; background-color: #E8F5F0;">
+    <div class="container" style="max-width: 1000px; margin: auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px; align-items: center;">
+            <div>
+                <img src="{% static 'core/images/home-rec.jpg' %}" alt="Aquarech Team" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+            <div>
+                <h2 style="font-size: 36px; color: #0F7B56; margin-bottom: 20px;">Wondering Who Makes Us So Great?</h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    Aquarech's success in achieving its goals and providing excellent customer service is due to the hard work and dedication of its employees. Our team members strive to have a positive impact on fish farmers and traders in local and international communities.
+                </p>
+                <a href="#" class="app-button" style="display: inline-block; margin-top: 20px; padding: 12px 30px;">Join Our Team</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section style="padding: 80px 20px; background-color: #0F7B56; color: white; text-align: center;">
+    <div class="container" style="max-width: 800px; margin: auto;">
+        <h2 style="font-size: 32px; margin-bottom: 20px;">Ready to be part of the aquaculture revolution?</h2>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
+            <a href="{% url 'contact' %}" class="app-button" style="background-color: white; color: #0F7B56; padding: 12px 30px; font-size: 16px;">
+                Contact Us
+            </a>
+            <a href="#" class="app-button" style="background-color: transparent; border: 2px solid white; padding: 12px 30px; font-size: 16px;">
+                Download Our Brochure
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

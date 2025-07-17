@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block title %}FISH FEEDS | Aquasmat{% endblock %}
+{% block content %}
+<div class="delivery-page">
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Last Mile Delivery Systems</h1>
+            <p class="lead text-center">The quickest way to buy high-quality fish feeds.</p>
+        </div>
+    </section>
+
+    <!-- Feed Pickup Section -->
+    <section class="pickup-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Feed pick up</h2>
+                    <p>Aquarech not only offers you access to high-quality fish feeds, but we also ensure that your orders are delivered to your doorstep faster than ever. Our Last Mile Distribution System is now available in Bondo, Kakamega, Busia, Migori, Nyamira, Siaya, Kirinyaga and Kisumu.</p>
+                    <button class="btn btn-primary mt-3">PLACE YOUR ORDER</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="/static/images/delivery-image.jpg" alt="Last Mile Delivery" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Section -->
+    <section class="app-section py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">One App, Many Uses</h2>
+            <a href="https://play.google.com/store" target="_blank" class="app-download-btn">
+                <img src="/static/images/google-play-badge.png" alt="Get it on Google Play" style="height: 60px;">
+            </a>
+            <p class="mt-3">Order feeds through our mobile application</p>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block styles %}
+<style>
+    .hero-section {
+        background-color: #f0f8ff;
+        padding: 3rem 0;
+    }
+    
+    .hero-section h1 {
+        color: #0066cc;
+        font-weight: 700;
+    }
+    
+    .pickup-section {
+        background-color: #f8f9fa;
+    }
+    
+    .pickup-section h2 {
+        color: #0066cc;
+    }
+    
+    .btn-primary {
+        background-color: #0066cc;
+        border-color: #0066cc;
+        padding: 10px 25px;
+        font-weight: 600;
+    }
+    
+    .app-section {
+        background-color: #ffffff;
+    }
+    
+    .app-section h2 {
+        color: #333;
+    }
+    
+    @media (max-width: 768px) {
+        .pickup-section .col-md-6:last-child {
+            margin-top: 2rem;
+        }
+    }
+</style>
+{% endblock %}

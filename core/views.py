@@ -1,7 +1,9 @@
 from django.shortcuts import render
+from .models import SuccessStory
 
 def home(request):
-  return render(request, 'core/home.html')
+  stories = SuccessStory.objects.all()
+  return render(request, 'core/home.html', {'stories': stories})
 
 def programs(request):
   return render(request, 'core/programs.html')

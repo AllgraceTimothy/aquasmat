@@ -8,7 +8,7 @@
     text-align: center; 
     position: relative; 
     overflow: hidden;
-    background: linear-gradient(rgba(232, 245, 240, 0.8), rgba(232, 245, 240, 0.8)), 
+    background: linear-gradient(rgba(232, 243, 245, 0.8), rgba(232, 245, 240, 0.8)), 
                 url('https://static.wixstatic.com/media/8e740e_598de19765954de896484837ffec1bc6~mv2.jpg/v1/fill/w_1351,h_929,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8e740e_598de19765954de896484837ffec1bc6~mv2.jpg');
     background-size: cover;
     background-position: center;
@@ -22,41 +22,16 @@
             Africa's leading aquaculture platform driving profitability through innovation
         </p>
         <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-            <a href="#" class="app-button" style="padding: 15px 35px; font-size: 16px; background-color: #0F7B56; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+            <a href="https://play.google.com/store/apps/details?id=com.example.aquasmat" class="app-button" style="padding: 15px 35px; font-size: 16px; background-color: #0F7B56; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
                 Get Started
             </a>
-            <a href="#" class="app-button" style="padding: 15px 35px; font-size: 16px; background-color: transparent; border: 2px solid #0F7B56; color: #0F7B56; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+            <a href="{% url 'about' %}" class="app-button" style="padding: 15px 35px; font-size: 16px; background-color: transparent; border: 2px solid #0F7B56; color: #0F7B56; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
                 Learn More
             </a>
         </div>
     </div>
     <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 100px; background: linear-gradient(to bottom, transparent, white); z-index: 1;"></div>
 </section>
-
-<!-- Stats Section -->
-<section style="padding: 60px 20px; background-color: white; position: relative; z-index: 2; margin-top: -50px;">
-    <div class="container" style="max-width: 1200px; margin: auto; background: white; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); padding: 40px;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
-            <div>
-                <div style="font-size: 42px; font-weight: 700; color: #0F7B56; margin-bottom: 10px;">500+</div>
-                <div style="font-size: 16px; color: #666;">Active Farmers</div>
-            </div>
-            <div>
-                <div style="font-size: 42px; font-weight: 700; color: #0F7B56; margin-bottom: 10px;">50+</div>
-                <div style="font-size: 16px; color: #666;">Tonnes Monthly</div>
-            </div>
-            <div>
-                <div style="font-size: 42px; font-weight: 700; color: #0F7B56; margin-bottom: 10px;">5</div>
-                <div style="font-size: 16px; color: #666;">Counties Served</div>
-            </div>
-            <div>
-                <div style="font-size: 42px; font-weight: 700; color: #0F7B56; margin-bottom: 10px;">100%</div>
-                <div style="font-size: 16px; color: #666;">Sustainable</div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Empowering Section -->
 <section style="padding: 100px 20px; background-color: #ffffff;">
     <div class="container" style="max-width: 1200px; margin: auto;">
@@ -67,9 +42,7 @@
                     Aquarech is revolutionizing fish farming through innovative methods that improve livelihoods while promoting sustainable, environment-friendly practices. Our integrated platform creates value chain efficiencies for all stakeholders in the aquaculture ecosystem.
                 </p>
                 <div style="display: flex; gap: 15px;">
-                    <a href="#" class="app-button" style="padding: 12px 30px; font-size: 16px; background-color: #0F7B56; color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">
-                        Our Approach
-                    </a>
+                    <h2 style="text-align: center; color: #0F7B56; font-size: 36px; margin-bottom: 15px;">Our Approach</h2>
                 </div>
             </div>
             <div style="flex: 1; min-width: 300px;">
@@ -134,10 +107,10 @@
 </section>
 
 <!-- Aquarech Advantage -->
-<section style="padding: 100px 20px; background-color: #ffffff;">
+<section style="padding: 10px 10px; background-color: #ffffff;">
     <div class="container" style="max-width: 1200px; margin: auto;">
         <div style="text-align: center; margin-bottom: 60px;">
-            <h2 style="color: #0F7B56; font-size: 36px; margin-bottom: 20px;">The Aquarech Difference</h2>
+            <h2 style="color: #0F7B56; font-size: 36px; margin-bottom: 20px;">The Aquasmat Difference</h2>
             <p style="font-size: 18px; color: #666666; max-width: 700px; margin: 0 auto;">
                 Our integrated approach solves the key challenges facing small and medium-scale fish farmers
             </p>
@@ -200,44 +173,57 @@
 </section>
 
 <!-- Testimonial -->
-<section style="padding: 100px 20px; background-color: #0F7B56; color: white;">
-    <div class="container" style="max-width: 1000px; margin: auto;">
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 60px;">
-            <div style="flex: 1; min-width: 300px;">
-                <img src="https://static.wixstatic.com/media/8e740e_405c471f3de24410935901491c39d9e3~mv2.jpg/v1/fill/w_136,h_136,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fish%20farmer%20in%20Kenya.jpg" alt="Martin Omondi" style="width: 100%; border-radius: 12px; box-shadow: 0 15px 40px rgba(0,0,0,0.2);">
-            </div>
-            <div style="flex: 1; min-width: 300px;">
-                <h3 style="font-size: 28px; margin-bottom: 30px; line-height: 1.4;">Success Stories From Our Farmers</h3>
-                <p style="font-size: 18px; margin-bottom: 30px; font-style: italic; line-height: 1.6;">
-                    "After joining Aquarech, my fish farming operation transformed completely. The training, quality feed, and guaranteed market gave me the confidence to expand. I've tripled my production while reducing costs."
-                </p>
-                <p style="font-weight: 600; font-size: 18px;">Martin Omondi</p>
-                <p style="font-size: 16px; opacity: 0.9;">Fish Farmer, Kisumu</p>
-                <div style="display: flex; gap: 15px; margin-top: 30px;">
-                    <div style="width: 12px; height: 12px; background-color: white; border-radius: 50%; opacity: 0.5;"></div>
-                    <div style="width: 12px; height: 12px; background-color: white; border-radius: 50%;"></div>
-                    <div style="width: 12px; height: 12px; background-color: white; border-radius: 50%; opacity: 0.5;"></div>
+<section class="success-stories" style="padding: 80px 20px; background-color: #F7FAF9;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="text-align: center; color: #0F7B56; font-size: 36px; margin-bottom: 50px;">We are loved by Fish Farmers</h2>
+        
+        <div class="stories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 40px;">
+            {% for story in stories %}
+            <div class="story-card" style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <img src="{{ story.image.url }}" alt="{{ story.name }}" style="width: 100%; height: 250px; object-fit: cover;">
+                <div style="padding: 25px;">
+                    <h3 style="font-size: 22px; margin-bottom: 10px; color: #222;">{{ story.name }}</h3>
+                    <p style="color: #0F7B56; margin-bottom: 15px;"><em>{{ story.locality }}</em></p>
+                    <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">{{ story.story }}</p>
+
                 </div>
             </div>
+            {% endfor %}
         </div>
-    </div>
-</section>
-
-<!-- Partners Section -->
-<section style="padding: 80px 20px; background-color: #F7FAF9;">
-    <div class="container" style="max-width: 1200px; margin: auto;">
-        <h3 style="text-align: center; color: #666; font-size: 16px; letter-spacing: 1px; margin-bottom: 30px; text-transform: uppercase;">Trusted By</h3>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; align-items: center;">
-            <img src="{% static 'core/images/partner1.png' %}" alt="Partner Logo" style="height: 40px; opacity: 0.6; filter: grayscale(100%);">
-            <img src="{% static 'core/images/partner2.png' %}" alt="Partner Logo" style="height: 50px; opacity: 0.6; filter: grayscale(100%);">
-            <img src="{% static 'core/images/partner3.png' %}" alt="Partner Logo" style="height: 45px; opacity: 0.6; filter: grayscale(100%);">
-            <img src="{% static 'core/images/partner4.png' %}" alt="Partner Logo" style="height: 35px; opacity: 0.6; filter: grayscale(100%);">
+        
+        <!-- Navigation between stories -->
+        {% if stories.has_other_pages %}
+        <div class="pagination" style="display: flex; justify-content: center; gap: 15px; margin-top: 40px;">
+            {% if stories.has_previous %}
+                <a href="?page={{ stories.previous_page_number }}" style="padding: 10px 20px; background-color: #0F7B56; color: white; border-radius: 6px; text-decoration: none;">
+                    Previous
+                </a>
+            {% endif %}
+            
+            {% for num in stories.paginator.page_range %}
+                {% if stories.number == num %}
+                    <span style="padding: 10px 20px; background-color: #E8F5F0; color: #0F7B56; border-radius: 6px; font-weight: bold;">
+                        {{ num }}
+                    </span>
+                {% elif num > stories.number|add:'-3' and num < stories.number|add:'3' %}
+                    <a href="?page={{ num }}" style="padding: 10px 20px; background-color: white; color: #0F7B56; border-radius: 6px; text-decoration: none;">
+                        {{ num }}
+                    </a>
+                {% endif %}
+            {% endfor %}
+            
+            {% if stories.has_next %}
+                <a href="?page={{ stories.next_page_number }}" style="padding: 10px 20px; background-color: #0F7B56; color: white; border-radius: 6px; text-decoration: none;">
+                    Next
+                </a>
+            {% endif %}
         </div>
+        {% endif %}
     </div>
 </section>
 
 <!-- CTA Section -->
-<section style="padding: 100px 20px; background-color: #E8F5F0; text-align: center;">
+<section style="padding: 70px 14px; background-color: #E8F5F0; text-align: center;">
     <div class="container" style="max-width: 800px; margin: auto;">
         <h2 style="color: #0F7B56; font-size: 36px; margin-bottom: 20px;">Ready to Transform Your Fish Farming Business?</h2>
         <p style="font-size: 18px; color: #666666; margin-bottom: 40px;">
@@ -250,7 +236,7 @@
 </section>
 
 <!-- Newsletter -->
-<section style="padding: 80px 20px; background-color: #ffffff; border-top: 1px solid #eee;">
+<section style="padding: 60px 12px; background-color: #ffffff; border-top: 1px solid #eee;">
     <div class="container" style="max-width: 600px; margin: auto; text-align: center;">
         <h3 style="color: #0F7B56; font-size: 28px; margin-bottom: 20px;">Stay Updated</h3>
         <p style="color: #666; margin-bottom: 30px; font-size: 16px; line-height: 1.6;">
